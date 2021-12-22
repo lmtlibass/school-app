@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&family=Oswald:wght@600&family=Pushster&family=Shizuru&display=swap');
+
+.meunu-nave
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #00A676;
+}
+.menu-mobile
+{
+    display: none;
+    cursor: pointer;
+    transition: transform .1s;
+}
+.menu-mobile:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+.link ul li
+{
+    display: inline-flex;
+    text-decoration: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.link ul li a 
+{
+    text-decoration: none;
+    padding: 10px;
+    color: #F7F9F9;
+    font-weight: bolder;
+    font-size: 20px;
+    transition: transform .1s;
+}
+.link ul li a:hover
+{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);   
+}
+
+#m1
+{
+    background-color: #00140F;
+    width: 44px;
+    height: 5px;
+}
+#m2
+{
+    background-color:#00140F;
+    width: 45px;
+    height: 5px;
+}
+#m3
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+#ajout
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#Myform input
+{
+    border: 0.5px solid #00140F;
+    padding: 7px;
+    border-radius: 4px;
+}
+#Myform  select
+{
+    border: 0.5px solid #00140F;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #ffffff; 
+}
+label 
+{
+    font-size: larger;
+    font-weight: 300;
+}
+
+
+
+
