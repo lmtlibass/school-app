@@ -30,50 +30,50 @@
         <section id="ajout" class="d-flex flex-row flex-wrap align-center">
             <div class="formulaire">
                 <form action="#" id="Myform">
-                        <input 
-                            required
-                            type="nom"
-                            name="nom" 
-                            id="nom"
-                            placeholder="nom*" 
-                            class="shadow mb-3 me-3" 
-                        /> 
-                        <input 
-                            required
-                            type="prrenom" 
-                            name="prenom" 
-                            id="prenom"
-                            placeholder="prenom*"
-                            class="shadow mb-3"
-                        /> <br>
-                   
-                   <!--  <label for="photo">choisir une photo</label><br>
                     <input 
-                        type="file" 
-                        name="photo" 
-                        id="photo"
+                        type="nom"
+                        name="nom" 
+                        id="nom"
+                        placeholder="nom*" 
+                        class="shadow mb-3 me-3" 
+                    /> 
+                    <input 
+                        type="prrenom" 
+                        name="prenom" 
+                        id="prenom"
+                        placeholder="prenom*"
                         class="shadow mb-3"
-                    /> <br> -->
+                    /> <br>
+                
                     <label for="bio">Biographi*</label><br>
                     <textarea 
-                        required
                         name="bio" 
                         id="bio" 
-                        cols="49" 
+                        cols="30" 
                         rows="10"
                     />
                     </textarea>
-                    <p class="mb-3" id="PBio">
-                       il vous reste : <span id="longeurText">0</span>
+                    <p>
+                        <span>0</span>
                         / 
                         <span>130</span>
                     </p>
                     <select name="niveau" id="niveau" class="mb-5">
                         <!-- <option value="niveau0">Votre niveau</option> -->
-                        <option value="1">	&#x1F31F;</option>
-                        <option value="2">	&#x1F31F; &#x1F31F; </option>
-                        <option value="3">	&#x1F31F; &#x1F31F; &#x1F31F; </option>
+                        <option value="&#x1F31F;">	&#x1F31F;</option>
+                        <option value="&#x1F31F; &#x1F31F;">	&#x1F31F; &#x1F31F; </option>
+                        <option value="&#x1F31F; &#x1F31F; &#x1F31F;">	&#x1F31F; &#x1F31F; &#x1F31F; </option>
                     </select> <br>
+                    <label for="competence1"> developpeur Front End</label> <br>
+                    <input 
+                        type="range"
+                        id = "competence1"
+                    /> <br>
+                    <label for="competence2"> developpeur Back End</label> <br>
+                    <input 
+                        type="range"
+                        id = "competence2"
+                    /> <br>
                     <button 
                         type="submit" 
                         id="ajouter"
@@ -81,28 +81,34 @@
                     />
                     ajouter
                     </button>
-                    
                 </form>
             </div>
             <div class="info-apprenant">
-                <div class="affiche-apprenant d-flex flex-row flex-wrap justify-content-between">
-                   
+                <div class="affiche-apprenant d-flex flex-row justify-content-between">
+                    <!-- <div class="card" style="width: 18rem;">
+                        <img src="/img/ex.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="card-icone d-flex flex-row  justify-content-between">
+                        <a href="#" class="btn btn-outline-success"><i class="bi bi-pen"></i></a>
+                        <a href="#" class="btn btn-outline-success"><i class="bi bi-x-circle"></i></a>
+                        </div>
+                        </div>
+                    </div> -->
                 </div>
-                  <button id="sauvegarder" class="btn btn-outline-success mt-5">
+                  <button class="btn btn-outline-success mt-5">
                       Sauvegarder 
                   </button>
             </div>
         </section>
         <section id="apprenant">
-
-        </section>
-        <section id="detail" class="mt-5" >
             <div class="col-6 Liste d-flex flex-row justify-content-around flex-wrap ">
 
             </div>
-            <div class="col">
-
-            </div>
+        </section>
+        <section id="detail">
+           
         </section>
     </main>
     <script src="dist/app.js"></script>
